@@ -1,0 +1,55 @@
+{
+  "name": "@r3k5/pdfscribe",
+  "version": "1.0.0",
+  "description": "Embed PDF annotations (Ink, FreeText, Line, Polygon, Highlight, and more) with proper /AP appearance streams — Bluebeam and Acrobat compatible. Includes XFDF import/export and SVG-to-PDF coordinate conversion.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pdf",
+    "annotation",
+    "annotations",
+    "pdf-annotation",
+    "pdf-markup",
+    "pdfscribe",
+    "xfdf",
+    "pdf-lib",
+    "bluebeam",
+    "acrobat",
+    "appearance-stream",
+    "ink",
+    "freetext",
+    "highlight",
+    "polygon",
+    "embed-annotations",
+    "canvas-to-pdf"
+  ],
+  "author": "r3k5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r3k5/pdfscribe.git"
+  },
+  "peerDependencies": {
+    "pdf-lib": ">=1.17.0"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "typescript": "^5.3.3"
+  }
+}
